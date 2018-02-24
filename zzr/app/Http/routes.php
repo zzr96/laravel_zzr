@@ -13,3 +13,9 @@
 Route::get('/', function () {
     return view('welcome');
 });
+Route::post('zzr',function(){
+	echo 'zzr post';	
+});
+Route::get('zzr',function(){
+	echo 'zzr get';
+});
