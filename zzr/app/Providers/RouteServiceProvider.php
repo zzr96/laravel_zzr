@@ -24,7 +24,8 @@ class RouteServiceProvider extends ServiceProvider
      */
     public function boot(Router $router)
     {
-        //
+        //添加路由参数全局限制
+        $router->pattern('zzrid','[0-9]+');
 
         parent::boot($router);
     }
