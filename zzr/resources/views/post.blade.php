@@ -46,5 +46,13 @@
 		{{csrf_field()}}
 		
 	</form>
+
+	<h2>文件</h2>
+	<form action="{{url('/form/file')}}" method="post" enctype="multipart/form-data">
+		<input type="file" name="files">
+		<button>提交</button>
+		{{csrf_field()}}	
+		
+	</form>
 </body>
 </html>
